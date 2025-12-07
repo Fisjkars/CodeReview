@@ -1,5 +1,5 @@
 # Use an official OpenJDK image as the base image
-FROM openjdk:26-ea-trixie
+FROM openjdk:17-ea-10-jdk
 
 # Set the working directory inside the container
 WORKDIR /app
