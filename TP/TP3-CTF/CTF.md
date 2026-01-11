@@ -78,76 +78,17 @@ Hint : Have a look at this : https://genshi.readthedocs.io/en/latest/templates/
 docker run --name web_websiterenderer -p 40008:5000 --cpus="1.0" --memory="400M" fisjkars/websiterenderer:3.0.0
 ```
 
-    {
-        "id"         : "web_websiterenderer",
-        "level"      : "Easy",
-        "status"     : "OK",
-        "version"    : "2.0.0",
-        "maintainer" : "yassine.bengana_ext@michelin.com",
-        "port"       : "40011",
-        "enabled"    : true,
-        "ctfd": {
-            "challenge": {
-                "name": "Website Renderer",
-                "description": "A web developper wanting to help others kickstart their website created an application that can render templates for anyone.\r\nLuckily, he's aware of the issues that most modern templating engine (like Jinja) suffers from, for this reason he chose an uncommon templating engine.\r\n\r\nSurely it cannot be exploited."
-            },
-            "flag": {
-                "content": "michelinCTF{N3v3r_tru5t_us3r_1nput!!!}"
-            },
-            "hints": [
-                "Have a look at this : https://genshi.readthedocs.io/en/latest/templates/"
-            ],
-            "attachments": [
-            ]
-        },
-        "build": {
-            "image": {
-                "name": "websiterenderer",
-                "file": "Web/WebsiteRenderer/Dockerfile"
-            },
-            "docker_compose": {
-                "template": "docker-compose-simple.sample",
-                "internal_port": "5000",
-                "cpus": "1.0",
-                "memory": "400M"
-            }
-        }
-    },
-    {
-        "id"         : "web_whatthephp2",
-        "level"      : "Easy",
-        "status"     : "OK",
-        "version"    : "2.0.0",
-        "maintainer" : "paul.amar@michelin.com",
-        "port"       : "40012",
-        "enabled"    : true,
-        "ctfd": {
-            "challenge": {
-                "name": "What the PHP 2",
-                "description": "Include everything, everywhere, anytime."
-            },
-            "flag": {
-                "content": "michelinCTF{LF1_1S_N3V3R_0v3R}"
-            },
-            "hints": [
-                "What does the require_once function do ? "
-            ],
-            "attachments": [
-            ]
-        },
-        "build": {
-            "image": {
-                "name": "whatthephp2",
-                "file": "Web/WhatThePHP2/Dockerfile"
-            },
-            "docker_compose": {
-                "template": "docker-compose-simple.sample",
-                "internal_port": "8080",
-                "cpus": "0.3",
-                "memory": "200M"
-            }
-        }
-    },
+### [Easy] What the PHP 2
+
+Include everything, everywhere, anytime.
+
+Hint : What does the require_once function do ?
+
+```bash
+docker run --name web_whatthephp2 -p 40009:8080 --cpus="0.3" --memory="200M" fisjkars/whatthephp2:3.0.0
+```
+
+   
     {
         "id"         : "web_theguesser",
         "level"      : "Medium",
