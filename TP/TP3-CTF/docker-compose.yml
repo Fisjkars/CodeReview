@@ -84,28 +84,28 @@ services:
           cpus: '0.3'
           memory: 200M
 
-  # web_youshallnotpass:
-  #   image: youshallnotpass:2.0.0
-  #   ports:
-  #     - "40007:8080"
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '0.3'
-  #         memory: 200M
+  web_youshallnotpass:
+    image: fisjkars/youshallnotpass:3.0.0
+    ports:
+      - "40005:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 200M
 
-  # web_youshallnotpassagain:
-  #   image: youshallnotpassagain:2.0.0
-  #   ports:
-  #     - "40008:8080"
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '0.3'
-  #         memory: 200M
+  web_youshallnotpassagain:
+    image: fisjkars/youshallnotpassagain:3.0.0
+    ports:
+      - "40006:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 200M
 
   # web_clicker:
-  #   image: clicker:2.0.0
+  #   image: clicker:3.0.0
   #   ports:
   #     - "40009:8080"
   #   deploy:
@@ -115,7 +115,7 @@ services:
   #         memory: 200M
 
   # web_moviedb:
-  #   image: moviedb:2.0.0
+  #   image: moviedb:3.0.0
   #   ports:
   #     - "40010:5000"
   #   deploy:
@@ -125,7 +125,7 @@ services:
   #         memory: 400M
 
   # web_websiterenderer:
-  #   image: websiterenderer:2.0.0
+  #   image: websiterenderer:3.0.0
   #   ports:
   #     - "40011:5000"
   #   deploy:
@@ -135,7 +135,7 @@ services:
   #         memory: 400M
 
   # web_whatthephp2:
-  #   image: whatthephp2:2.0.0
+  #   image: whatthephp2:3.0.0
   #   ports:
   #     - "40012:8080"
   #   deploy:
@@ -145,7 +145,7 @@ services:
   #         memory: 200M
 
   # web_theguesser:
-  #   image: guesser:2.0.0
+  #   image: guesser:3.0.0
   #   ports:
   #     - "40013:8080"
   #   deploy:
@@ -155,7 +155,7 @@ services:
   #         memory: 600M
 
   # web_springbootapi:
-  #   image: springbootapi:2.0.0
+  #   image: springbootapi:3.0.0
   #   ports:
   #     - "40014:8080"
   #   deploy:
@@ -165,7 +165,7 @@ services:
   #         memory: 400M
 
   # web_canyouguessthehash:
-  #   image: canyouguessthehash:2.0.0
+  #   image: canyouguessthehash:3.0.0
   #   ports:
   #     - "40015:8080"
   #   deploy:
@@ -175,7 +175,7 @@ services:
   #         memory: 200M
 
   # web_dihydrogen:
-  #   image: dihydrogen:2.0.0
+  #   image: dihydrogen:3.0.0
   #   ports:
   #     - "40016:8080"
   #   deploy:
@@ -185,7 +185,7 @@ services:
   #         memory: 200M
 
   # web_holygrail2:
-  #   image: holygrailv2:2.0.0
+  #   image: holygrailv2:3.0.0
   #   ports:
   #     - "40017:8080"
   #   deploy:
@@ -195,7 +195,7 @@ services:
   #         memory: 200M
 
   # web_breakauth:
-  #   image: breakauth:2.0.0
+  #   image: breakauth:3.0.0
   #   ports:
   #     - "40018:8080"
   #   deploy:
@@ -205,7 +205,7 @@ services:
   #         memory: 200M
 
   # web_logger:
-  #   image: logger:2.0.0
+  #   image: logger:3.0.0
   #   ports:
   #     - "40019:8080"
   #   deploy:
@@ -215,7 +215,7 @@ services:
   #         memory: 500M
 
   # web_rickandmorty:
-  #   image: rickandmorty:2.0.0
+  #   image: rickandmorty:3.0.0
   #   ports:
   #     - "40020:8000"
   #   deploy:
@@ -225,7 +225,7 @@ services:
   #         memory: 300M
 
   # web_springbootactuator:
-  #   image: sbstarterpack:2.0.0
+  #   image: sbstarterpack:3.0.0
   #   ports:
   #     - "40021:8080"
   #   deploy:
@@ -235,7 +235,7 @@ services:
   #         memory: 1200M
 
   # web_graviteelike:
-  #   image: graviteelike:2.0.0
+  #   image: graviteelike:3.0.0
   #   ports:
   #     - "40022:8080"
   #   deploy:
@@ -245,7 +245,7 @@ services:
   #         memory: 600M
 
   # web_ssofantome:
-  #   image: ssofantome:2.0.0
+  #   image: ssofantome:3.0.0
   #   ports:
   #     - "40023:8080"
   #   deploy:
@@ -255,7 +255,7 @@ services:
   #         memory: 500M
 
   # web_tomcatmylover:
-  #   image: tomcatmylover:2.0.0
+  #   image: tomcatmylover:3.0.0
   #   ports:
   #     - "40024:8080"
   #   deploy:
@@ -265,7 +265,7 @@ services:
   #         memory: 600M
 
   # web_websiterenderer2:
-  #   image: websiterenderer2:2.0.0
+  #   image: websiterenderer2:3.0.0
   #   ports:
   #     - "40025:5000"
   #   deploy:
@@ -275,7 +275,7 @@ services:
   #         memory: 400M
 
   # web_dihydrogen2:
-  #   image: dihydrogen2:2.0.0
+  #   image: dihydrogen2:3.0.0
   #   ports:
   #     - "40026:8080"
   #   deploy:
