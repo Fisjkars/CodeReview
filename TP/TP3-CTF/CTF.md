@@ -66,6 +66,18 @@ Hint : Sometimes a little injection is enough.
 docker run --name web_moviedb -p 40007:5000 --cpus="1.0" --memory="400M" fisjkars/moviedb:3.0.0
 ```
 
+### [Easy] Website Renderer
+
+A web developper wanting to help others kickstart their website created an application that can render templates for anyone.
+Luckily, he's aware of the issues that most modern templating engine (like Jinja) suffers from, for this reason he chose an uncommon templating engine.
+Surely it cannot be exploited.
+
+Hint : Have a look at this : https://genshi.readthedocs.io/en/latest/templates/
+
+```bash
+docker run --name web_websiterenderer -p 40008:5000 --cpus="1.0" --memory="400M" fisjkars/websiterenderer:3.0.0
+```
+
     {
         "id"         : "web_websiterenderer",
         "level"      : "Easy",

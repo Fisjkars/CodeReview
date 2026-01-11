@@ -114,15 +114,15 @@ services:
           cpus: '1.0'
           memory: 400M
 
-  # web_websiterenderer:
-  #   image: websiterenderer:3.0.0
-  #   ports:
-  #     - "40011:5000"
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '1.0'
-  #         memory: 400M
+  web_websiterenderer:
+    image: fisjkars/websiterenderer:3.0.0
+    ports:
+      - "40008:5000"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 400M
 
   # web_whatthephp2:
   #   image: whatthephp2:3.0.0
