@@ -104,25 +104,15 @@ services:
           cpus: '0.3'
           memory: 200M
 
-  # web_clicker:
-  #   image: clicker:3.0.0
-  #   ports:
-  #     - "40009:8080"
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '0.3'
-  #         memory: 200M
-
-  # web_moviedb:
-  #   image: moviedb:3.0.0
-  #   ports:
-  #     - "40010:5000"
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '1.0'
-  #         memory: 400M
+  web_moviedb:
+    image: fisjkars/moviedb:3.0.0
+    ports:
+      - "40007:5000"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 400M
 
   # web_websiterenderer:
   #   image: websiterenderer:3.0.0

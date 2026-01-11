@@ -55,115 +55,17 @@ Hint : How to set an IP inside HTTP headers
 ```bash
 docker run --name web_youshallnotpassagain -p 40006:8080 --cpus="0.3" --memory="200M" fisjkars/youshallnotpassagain:3.0.0
 ```
-   
-  
-   
-    {
-        "id"         : "web_youshallnotpassagain",
-        "level"      : "Easy",
-        "status"     : "OK",
-        "version"    : "2.0.0",
-        "maintainer" : "maxence.schmitt1@michelin.com",
-        "port"       : "40008",
-        "enabled"    : true,
-        "ctfd": {
-            "challenge": {
-                "name": "You shall not pass again",
-                "description": "This service is only restricted to a specific IP."
-            },
-            "flag": {
-                "content": "michelinCTF{G0sh_Th1s_1s_AweS0me}"
-            },
-            "hints": [
-                "How to set an IP inside HTTP headers"
-            ],
-            "attachments": [
-            ]
-        },
-        "build": {
-            "image": {
-                "name": "youshallnotpassagain",
-                "file": "Web/YouShallNotPassAgain/Dockerfile"
-            },
-            "docker_compose": {
-                "template": "docker-compose-simple.sample",
-                "internal_port": "8080",
-                "cpus": "0.3",
-                "memory": "200M"
-            }
-        }
-    },
-    {
-        "id"         : "web_clicker",
-        "level"      : "Easy",
-        "status"     : "OK",
-        "version"    : "2.0.0",
-        "maintainer" : "remi.dubourgnoux@michelin.com",
-        "port"       : "40009",
-        "enabled"    : true,
-        "ctfd": {
-            "challenge": {
-                "name": "Clicker",
-                "description": "On this web site : user **Max**, password **TestingPain_or_Pentesting**\nTry to escalate your privileges to **Administrator**"
-            },
-            "flag": {
-                "content": "michelinCTF{cookieclicker}"
-            },
-            "hints": [
-                "Cookie are easy to bake.",
-                "Common Hashes for Common Values."
-            ],
-            "attachments": [
-            ]
-        },
-        "build": {
-            "image": {
-                "name": "clicker",
-                "file": "Web/Clicker/Dockerfile"
-            },
-            "docker_compose": {
-                "template": "docker-compose-simple.sample",
-                "internal_port": "8080",
-                "cpus": "0.3",
-                "memory": "200M"
-            }
-        }
-    },
-    {
-        "id"         : "web_moviedb",
-        "level"      : "Easy",
-        "status"     : "OK",
-        "version"    : "2.0.0",
-        "maintainer" : "yassine.bengana_ext@michelin.com",
-        "port"       : "40010",
-        "enabled"    : true,
-        "ctfd": {
-            "challenge": {
-                "name": "MovieDB",
-                "description": "Your favorite movie site doesn't list your most liked films, get admin access to it and add them to the list !"
-            },
-            "flag": {
-                "content": "michelinCTF{U53_PR3P4R3D_ST4T3M3NTS!!}"
-            },
-            "hints": [
-                "Sometimes a little injection is enough."
-            ],
-            "attachments": [
-            ]
-        },
-        "build": {
-            "image": {
-                "name": "moviedb",
-                "file": "Web/MovieDB/Dockerfile"
-            },
-            "docker_compose": {
-                "template": "docker-compose-simple.sample",
-                "internal_port": "5000",
-                "cpus": "1.0",
-                "memory": "400M"
-            }
-        }
-    },
+
+### [Easy] MovieDB
+
+Your favorite movie site doesn't list your most liked films, get admin access to it and add them to the list !
+
+Hint : Sometimes a little injection is enough.
+
+```bash
+docker run --name web_moviedb -p 40007:5000 --cpus="1.0" --memory="400M" fisjkars/moviedb:3.0.0
+```
+
     {
         "id"         : "web_websiterenderer",
         "level"      : "Easy",
