@@ -88,41 +88,19 @@ Hint : What does the require_once function do ?
 docker run --name web_whatthephp2 -p 40009:8080 --cpus="0.3" --memory="200M" fisjkars/whatthephp2:3.0.0
 ```
 
-   
-    {
-        "id"         : "web_theguesser",
-        "level"      : "Medium",
-        "status"     : "OK",
-        "version"    : "2.0.0",
-        "maintainer" : "maxime.escourbiac@michelin.com",
-        "port"       : "40013",
-        "enabled"    : true,
-        "ctfd": {
-            "challenge": {
-                "name": "TheGuesser",
-                "description": "Could you guess the next prediction of Paul Muad'dib ?"
-            },
-            "flag": {
-                "content": "michelinCTF{R4ND0M_1S_N0T_R34LLY_R4ND0M}"
-            },
-            "hints": [
-                "Random is not necessary random.",
-                "Focus on the seed."
-            ]
-        },
-        "build": {
-            "image": {
-                "name": "guesser",
-                "file": "Web/TheGuesser/Dockerfile"
-            },
-            "docker_compose": {
-                "template": "docker-compose-simple.sample",
-                "internal_port": "8080",
-                "cpus": "0.50",
-                "memory": "600M"
-            }
-        }
-    },
+### [Medium] The Guesser
+
+Could you guess the next prediction of Paul Muad'dib ?
+
+Hints :
+
+- Random is not necessary random.
+- Focus on the seed.
+
+```bash
+docker run --name web_theguesser -p 40010:8080 --cpus="0.5" --memory="600M" fisjkars/guesser:3.0.0
+```
+    
     {
         "id"         : "web_springbootapi",
         "level"      : "Medium",
@@ -582,7 +560,7 @@ docker run --name web_whatthephp2 -p 40009:8080 --cpus="0.3" --memory="200M" fis
 
 ## Crypto
 
-### [MEDIUM] TicketGen
+### [Medium] TicketGen
 
 Grab the VIP ticket to beat this challenge !
 
@@ -592,7 +570,7 @@ Hint : Comments could be found inside the QRCode.
 docker run --name crypto_ticketgen -p 30000:8080 --cpus="0.3" --memory="600M" fisjkars/ticketgen:3.0.0
 ```
 
-### [HARD] Waterboard
+### [Hard] Waterboard
 
 Decrypt this text : 24ded996f66ceeaf775285157158143f69b04b83d91f66b4dd7e9083fc2b5a93ec56ee182d93da01cc0bd9cdf4df4a577065728099a8cb58d50efdf2a3e294f0e550ae6c26f85ecc5c4edc041025749a6be83290754bea030d513ae277967700
 
@@ -604,7 +582,7 @@ docker run --name crypto_waterboard -p 30001:8080 --cpus="1.0" --memory="600M" f
 
 ## Reverse
 
-### [MEDIUM] Really
+### [Medium] Really
 
 This binary is not secure I think you can easily get the flag. To access the challenge : `nc 127.0.0.1 25001`
 
@@ -614,7 +592,7 @@ Hint : Do you know Auverflow ?
 docker run --name reverse_really -p 25001:1337 --cpus="0.3" --memory="200M" fisjkars/really:3.0.0
 ```
 
-### [MEDIUM] Story Teller
+### [Medium] Story Teller
 
 I’m just copying and pasting with this program. What can go wrong? You can view source here. To access the challenge : `nc localhost 25002``
 

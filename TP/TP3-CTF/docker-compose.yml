@@ -134,15 +134,15 @@ services:
           cpus: '0.3'
           memory: 200M
 
-  # web_theguesser:
-  #   image:  fisjkars/guesser:3.0.0
-  #   ports:
-  #     - "40013:8080"
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         cpus: '0.50'
-  #         memory: 600M
+  web_theguesser:
+    image:  fisjkars/guesser:3.0.0
+    ports:
+      - "40010:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 600M
 
   # web_springbootapi:
   #   image:  fisjkars/springbootapi:3.0.0
