@@ -1,0 +1,45 @@
+# Author : Maxime Escourbiac <maxime.escourbiac@michelin.com>
+# Last update : 2023-09-11
+version: '3'
+
+services:
+
+  crypto_ticketgen:
+    image: fisjkars/ticketgen:3.0.0
+    ports:
+      - "30000:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 600M
+
+  crypto_waterboard:
+    image: fisjkars/waterboard:3.0.0
+    ports:
+      - "30001:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 600M
+
+  reverse_really:
+    image: fisjkars/really:3.0.0
+    ports:
+      - "25001:1337"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 200M
+
+  reverse_storyteller:
+    image: fisjkars/storyteller:3.0.0
+    ports:
+      - "25002:1337"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 200M
