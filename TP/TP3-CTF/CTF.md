@@ -101,6 +101,113 @@ Hints :
 docker run --name web_theguesser -p 40010:8080 --cpus="0.5" --memory="600M" fisjkars/guesser:3.0.0
 ```
 
+### [Medium] Springboot API
+
+Look at my coffee API!! The flag is inside `flag.txt`
+
+Hints :
+
+- pom.xml
+- CVE-2018-1259
+
+```bash
+docker run --name web_springbootapi -p 40011:8080 --cpus="0.3" --memory="400M" fisjkars/springbootapi:3.0.0
+```
+
+### [Medium] Can you guess the hash
+
+Can you guess the hash? To help you, I am giving you the source code!
+
+Hints : Type of variables are important
+
+```bash
+docker run --name web_canyouguessthehash -p 40012:8080 --cpus="0.3" --memory="400M" fisjkars/canyouguessthehash:3.0.0
+```
+
+### [Medium] Dihydrogen
+
+Our main dev created a Springboot starter pack for accelerating our project init.
+
+Hints :
+
+- The dev let the H2Console online
+- ALIAS is amazing H2 feature.
+
+```bash
+docker run --name web_dihydrogen -p 40013:8080 --cpus="0.4" --memory="200M" fisjkars/dihydrogen:3.0.0
+```
+
+### [Medium] Logger
+
+The security team asked to add tracability in the login page.
+
+Hints :
+
+- Look at main 0-day in 2021.
+- The vulnerability was everywhere.
+
+```bash
+docker run --name web_logger -p 40014:8080 --cpus="0.5" --memory="500M" fisjkars/logger:3.0.0
+```
+
+### [Medium] Rick and Morty
+
+The security team asked to add tracability in the login page.
+
+Hints : Could you break the solution used by Michelin pentesters ? (Challengers/CTF@Bib1!)
+
+```bash
+docker run --name web_rickandmorty -p 40015:8000 --cpus="0.3" --memory="300M" fisjkars/rickandmorty:3.0.0
+```
+
+### [Hard] SpringBoot Starter Pack
+
+Our main dev created a Springboot starter pack for accelerating our project init.
+
+Hints : CDo you know what is jolokia ?
+
+```bash
+docker run --name web_springbootstarterpack -p 40016:8080 --cpus="0.8" --memory="1200M" fisjkars/springbootstarterpack:3.0.0
+```
+
+### [Hard] Gravitee-Like
+
+Our new developer begin to write the new Michelin Social Club website to get the Social Club last amazing content.
+
+Hints :
+
+- <https://gravitee.io/products/apim/>
+- <https://github.com/gravitee-io/issues/issues/2232>
+
+```bash
+docker run --name web_graviteelike -p 40017:8080 --cpus="0.5" --memory="600M" fisjkars/graviteelike:3.0.0
+```
+
+### [Hard] SSO Fantome
+
+Beat that SSO !
+
+```bash
+docker run --name web_ssofantome -p 40018:8080 --cpus="0.5" --memory="500M" fisjkars/ssofantome:3.0.0
+```
+
+### [Hard] Website Renderer 2
+
+The developper behind the application learnt about your shenanigans.\r\nThis time, he decided to implement security restrictions to protect his website against people like you.
+He keeps telling everyone that there is absoltely NO way to get command execution, i'm safe now !
+
+```bash
+docker run --name web_websiterenderer2 -p 40019:5000 --cpus="1.0" --memory="400M" fisjkars/websiterenderer2:3.0.0
+```
+
+### [Extreme] Dihydrogen 2
+
+The security team received a responsible disclosure from an ethical hacker for the first version of the SpringBoot starter pack. Our main dev resticted components installed on the server to fix the issue.
+
+```bash
+docker run --name web_dihydrogen2 -p 40020:5000 --cpus="0.5" --memory="300M" fisjkars/dihydrogen2:3.0.0
+```
+
 ## Crypto
 
 ### [Medium] TicketGen
@@ -137,7 +244,7 @@ docker run --name reverse_really -p 25001:1337 --cpus="0.3" --memory="200M" fisj
 
 ### [Medium] Story Teller
 
-I’m just copying and pasting with this program. What can go wrong? You can view source here. To access the challenge : `nc localhost 25002``
+I’m just copying and pasting with this program. What can go wrong? You can view source here. To access the challenge : `nc localhost 25002`
 
 ```bash
 docker run --name reverse_storyteller -p 25002:1337 --cpus="0.3" --memory="200M" fisjkars/storyteller:3.0.0

@@ -143,3 +143,104 @@ services:
         limits:
           cpus: '0.50'
           memory: 600M
+
+  web_springbootapi:
+    image:  fisjkars/springbootapi:3.0.0
+    ports:
+      - "40011:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 400M
+
+  web_canyouguessthehash:
+    image:  fisjkars/canyouguessthehash:3.0.0
+    ports:
+      - "40012:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 200M
+
+  web_dihydrogen:
+    image:  fisjkars/dihydrogen:3.0.0
+    ports:
+      - "40013:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.4'
+          memory: 200M
+
+  web_logger:
+    image:  fisjkars/logger:3.0.0
+    ports:
+      - "40014:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 500M
+
+  web_rickandmorty:
+    image:  fisjkars/rickandmorty:3.0.0
+    ports:
+      - "40015:8000"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 300M
+
+  web_springbootstarterpack:
+    image:  fisjkars/springbootstarterpack:3.0.0
+    ports:
+      - "40016:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.8'
+          memory: 1200M
+
+  web_graviteelike:
+    image:  fisjkars/graviteelike:3.0.0
+    ports:
+      - "40017:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 600M
+
+  web_ssofantome:
+    image:  fisjkars/ssofantome:3.0.0
+    ports:
+      - "40018:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 500M
+
+  web_websiterenderer2:
+    image:  fisjkars/websiterenderer2:3.0.0
+    ports:
+      - "40019:5000"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 400M
+
+  web_dihydrogen2:
+    image:  fisjkars/dihydrogen2:3.0.0
+    ports:
+      - "40020:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 300M
+  
