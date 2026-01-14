@@ -4,6 +4,16 @@ version: '3'
 
 services:
 
+  tools_socks:
+    image: fisjkars/socks:3.0.0
+    ports:
+      - "80:1080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 200M
+
   crypto_ticketgen:
     image: fisjkars/ticketgen:3.0.0
     ports:
