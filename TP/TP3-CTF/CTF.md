@@ -72,7 +72,7 @@ A web developper wanting to help others kickstart their website created an appli
 Luckily, he's aware of the issues that most modern templating engine (like Jinja) suffers from, for this reason he chose an uncommon templating engine.
 Surely it cannot be exploited.
 
-Hint : Have a look at this : https://genshi.readthedocs.io/en/latest/templates/
+Hint : Have a look at this : <https://genshi.readthedocs.io/en/latest/templates.html>
 
 ```bash
 docker run --name web_websiterenderer -p 40008:5000 --cpus="1.0" --memory="400M" fisjkars/websiterenderer:3.0.0
@@ -121,7 +121,7 @@ Can you guess the hash? To help you, I am giving you the source code!
 Hints : Type of variables are important
 
 ```bash
-docker run --name web_canyouguessthehash -p 40012:8080 --cpus="0.3" --memory="400M" fisjkars/canyouguessthehash:3.0.0
+docker run --name web_canyouguessthehash -p 40012:8080 --cpus="0.3" --memory="400M" fisjkars/canyouguessthehash:3.0.2
 ```
 
 ### [Medium] Dihydrogen
