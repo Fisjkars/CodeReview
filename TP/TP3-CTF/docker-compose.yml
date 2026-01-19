@@ -165,7 +165,7 @@ services:
           memory: 400M
 
   web_canyouguessthehash:
-    image:  fisjkars/canyouguessthehash:3.0.0
+    image:  fisjkars/canyouguessthehash:3.0.2
     ports:
       - "40012:8080"
     deploy:
